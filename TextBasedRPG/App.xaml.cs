@@ -10,4 +10,3 @@ namespace TextBasedRPG;
 public partial class App : Application
 {
 }
-
