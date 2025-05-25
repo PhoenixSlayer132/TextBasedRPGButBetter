@@ -26,8 +26,9 @@ public partial class MainWindow : Window
         
         Monsters monster = new Monsters("Wolf", 0,
             new MonsterStats(MonsterStats.eSkillLevel.Tutorial, 20, 5, 5, 5, 5, 5, 3),
-                new MonsterType(
-                    new BodyType(BodyType.eBodyType.Feral)));
+                new MonsterType(MonsterType.eMonsterType.Wolf,
+                    new BodyType(BodyType.eBodyType.Feral),
+                    new MonsterElement(MonsterElement.eElement.Null)));
         
         InitializeComponent();
     }

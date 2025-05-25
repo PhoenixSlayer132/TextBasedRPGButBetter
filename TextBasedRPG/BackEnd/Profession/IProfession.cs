@@ -1,7 +1,6 @@
 ﻿namespace TextBasedRPG.BackEnd.Profession;
 
-interface IProfession
-{
+interface IProfession {
     void getProfession();
     void setProfession();
 }

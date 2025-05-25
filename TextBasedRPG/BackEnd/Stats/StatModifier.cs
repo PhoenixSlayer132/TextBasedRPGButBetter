@@ -3,15 +3,14 @@ using TextBasedRPG.BackEnd.Player;
 
 namespace TextBasedRPG.BackEnd.Stats;
 
-public interface IStatModifier
-{
-    int ConMod();
+public interface IStatModifier {
+    int conMod();
 
-    int StrMod();
+    int strMod();
 
-    int DexMod();
+    int dexMod();
 
-    int IntelMod();
+    int intelMod();
 
-    int WisMod();
+    int wisMod();
 }

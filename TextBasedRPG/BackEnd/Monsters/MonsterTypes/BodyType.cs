@@ -1,9 +1,7 @@
 ﻿namespace TextBasedRPG.BackEnd.Monsters.MonsterTypes;
 
-public class BodyType
-{
-    public enum eBodyType
-    {
+public class BodyType {
+    public enum eBodyType {
          Humanoid,
          Feral,
          Elemental,
@@ -13,12 +11,9 @@ public class BodyType
          Abomination
     }
     
-    public BodyType(eBodyType bodyType)
-    {
+    public BodyType(eBodyType bodyType) {
         
     }
     
-    
-
     
 }

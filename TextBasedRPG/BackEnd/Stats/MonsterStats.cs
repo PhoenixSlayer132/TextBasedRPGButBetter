@@ -2,10 +2,8 @@
 
 namespace TextBasedRPG.BackEnd.Monsters;
 
-public class MonsterStats : IStatModifier
-{
-    public enum eSkillLevel
-    {
+public class MonsterStats : IStatModifier {
+    public enum eSkillLevel {
         Tutorial,
         Beginner,
         Intermediate,
@@ -26,8 +24,7 @@ public class MonsterStats : IStatModifier
     private int Spd { get; set; }
     #endregion
     
-    public MonsterStats(eSkillLevel skillLevel, int health, int constitution, int strength, int dexterity, int intelligence, int wisdom, int speed)
-    {
+    public MonsterStats(eSkillLevel skillLevel, int health, int constitution, int strength, int dexterity, int intelligence, int wisdom, int speed) {
         SkillLevel = skillLevel;
         Hp = health;
         Con = constitution;
@@ -38,28 +35,13 @@ public class MonsterStats : IStatModifier
         Spd = speed;
     }
     
-    public int ConMod()
-    {
-        return (int) (Con * 0.5);
-    }
+    public int conMod() { return (int) (Con * 0.5); }
 
-    public int StrMod()
-    {
-        return (int) (Str * 0.5);
-    }
+    public int strMod() { return (int) (Str * 0.5); }
 
-    public int DexMod()
-    {
-        return (int) (Dex * 0.5);
-    }
+    public int dexMod() { return (int) (Dex * 0.5); }
 
-    public int IntelMod()
-    {
-        return (int) (Intel * 0.5);
-    }
+    public int intelMod() { return (int) (Intel * 0.5); }
 
-    public int WisMod()
-    {
-        return (int) (Wis * 0.5);
-    }
+    public int wisMod() { return (int) (Wis * 0.5); }
 }
