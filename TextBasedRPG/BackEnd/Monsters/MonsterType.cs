@@ -2,18 +2,21 @@
 
 namespace TextBasedRPG.BackEnd.Monsters;
 
-public class MonsterType {
+public class MonsterType<T> where T : Monsters, new() {
 
     public enum eMonsterType {
-        Wolf,
-        Dragon,
-        Goblin,
-        Elf,
+        Humanoid,
+        Feral,
+        Elemental,
+        Flora,
+        Undead,
+        Draconic,
+        Abomination
     }
-    public MonsterType(eMonsterType monsterType, BodyType bodyType, MonsterElement element) {
+    public MonsterType() {
         
     }
     
 
     
-}
+} 
