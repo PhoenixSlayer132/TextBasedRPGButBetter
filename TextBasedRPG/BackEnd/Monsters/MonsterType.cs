@@ -1,8 +1,6 @@
-﻿using TextBasedRPG.BackEnd.Monsters.MonsterTypes;
+﻿namespace TextBasedRPG.BackEnd.Monsters;
 
-namespace TextBasedRPG.BackEnd.Monsters;
-
-public class MonsterType<T> where T : Monsters, new() {
+public class MonsterType {
 
     public enum eMonsterType {
         Humanoid,
@@ -16,7 +14,21 @@ public class MonsterType<T> where T : Monsters, new() {
     public MonsterType() {
         
     }
+    public class MonsterElement {
+        public enum eElement {
+            Fire,
+            Water,
+            Earth,
+            Wind,
+            Null
+        }
     
+        public MonsterElement(eElement element) {
+        
+        }
+
+    
+    }
 
     
 } 
