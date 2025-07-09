@@ -2,7 +2,7 @@
 
 public class MonsterType {
 
-    public enum eMonsterType {
+    protected enum eBodyType {
         Humanoid,
         Feral,
         Elemental,
@@ -11,11 +11,12 @@ public class MonsterType {
         Draconic,
         Abomination
     }
-    public MonsterType() {
+    private MonsterType(eBodyType eBodyType) {
         
     }
+    
     public class MonsterElement {
-        public enum eElement {
+        protected enum eElement {
             Fire,
             Water,
             Earth,
@@ -23,7 +24,7 @@ public class MonsterType {
             Null
         }
     
-        public MonsterElement(eElement element) {
+        private MonsterElement(eElement element) {
         
         }
 
