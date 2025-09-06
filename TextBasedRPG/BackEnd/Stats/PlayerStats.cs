@@ -11,6 +11,8 @@ public class PlayerStats : IStatModifier {
     private int Wis { get; set; }
     private int Spd { get; set; }
     
+    
+    
     public PlayerStats(int health, int constitution, int strength, int dexterity, int intelligence, int wisdom, int speed) {
         Hp = health;
         Con = constitution;

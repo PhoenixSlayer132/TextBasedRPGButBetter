@@ -16,6 +16,26 @@ public class MonsterStats : IStatModifier {
         HighLord
     }
     
+    public static MonsterStats randomizedStats() {
+        Random random = new Random();
+
+        //int randomElementIndex = random.Next(0, elements.Length);
+        
+        
+        
+        MonsterStats randMonster = new MonsterStats(
+            randomSkillLevel, 
+            randomHealth, 
+            randomConsti, 
+            randomStreng, 
+            randomDext, 
+            randomIntelli, 
+            randomWisdom, 
+            randomSpeed);
+        
+        return randMonster;
+    }
+    
     #region enum
     private eLifeRank LifeRank { get; set; }
     private int Hp { get; set; }
