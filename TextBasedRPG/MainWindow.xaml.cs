@@ -10,6 +10,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TextBasedRPG.BackEnd.Monsters;
 using TextBasedRPG.BackEnd.Player;
+using TextBasedRPG.BackEnd.Stats;
 
 namespace TextBasedRPG;
 
@@ -23,9 +24,8 @@ public partial class MainWindow : Window
         Player player = new Player("Phoenix", Player.eProfession.Mage, 0, 
             new PlayerStats(20, 5, 5, 5, 5, 5, 3));
         
-        Monsters monster = new Monsters("Wolf", 0,
-            new MonsterStats(MonsterStats.eSkillLevel.Tutorial, 20, 5, 5, 5, 5, 5, 3), 
-            MonsterType.randomizedTypes());
+        Monsters monster = new Monsters("Wolf", 0, MonsterType.randomizedTypes(),
+            new MonsterStats(MonsterStats.eLifeRank.Tutorial, 20, 5, 5, 5, 5, 5, 3));
         
         InitializeComponent();
     }

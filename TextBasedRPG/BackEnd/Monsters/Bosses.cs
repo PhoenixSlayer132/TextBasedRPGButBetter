@@ -1,4 +1,6 @@
-﻿namespace TextBasedRPG.BackEnd.Monsters;
+﻿using TextBasedRPG.BackEnd.Stats;
 
-public class Bosses(string name, int level, MonsterStats stats, MonsterType type)
+namespace TextBasedRPG.BackEnd.Monsters;
+
+public class Bosses(string name, byte level, MonsterStats stats, MonsterType type)
     : Monsters(name, level, type, stats);

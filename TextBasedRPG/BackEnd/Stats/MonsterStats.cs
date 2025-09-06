@@ -1,20 +1,23 @@
 ﻿using TextBasedRPG.BackEnd.Stats;
 
-namespace TextBasedRPG.BackEnd.Monsters;
+namespace TextBasedRPG.BackEnd.Stats;
 
 public class MonsterStats : IStatModifier {
-    public enum eSkillLevel {
+    public enum eLifeRank {
         Tutorial,
+        NewBlood,
         Beginner,
-        Intermediate,
         Advanced,
-        Expert,
-        Master,
-        GrandMaster
+        Elite,
+        SpecialElite,
+        StandardChieftain,
+        HighChieftain,
+        Lord,
+        HighLord
     }
     
     #region enum
-    private eSkillLevel SkillLevel { get; set; }
+    private eLifeRank LifeRank { get; set; }
     private int Hp { get; set; }
     private int Con { get; set; }
     private int Str { get; set; }
@@ -24,8 +27,8 @@ public class MonsterStats : IStatModifier {
     private int Spd { get; set; }
     #endregion
     
-    public MonsterStats(eSkillLevel skillLevel, int health, int constitution, int strength, int dexterity, int intelligence, int wisdom, int speed) {
-        SkillLevel = skillLevel;
+    public MonsterStats(eLifeRank lifeRank, int health, int constitution, int strength, int dexterity, int intelligence, int wisdom, int speed) {
+        LifeRank = lifeRank;
         Hp = health;
         Con = constitution;
         Str = strength;
