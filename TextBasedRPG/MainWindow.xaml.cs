@@ -11,6 +11,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TextBasedRPG.BackEnd.Monsters;
 using TextBasedRPG.BackEnd.Player;
+using TextBasedRPG.BackEnd.Stats;
 
 namespace TextBasedRPG;
 
